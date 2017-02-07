@@ -64,14 +64,14 @@
               </select>
 
 					  </div>
-					  <button id="bt_buscar" class="btn btn-warning btn-lg">Procurar</button>
+					  <button class="btn btn-warning btn-lg bt_buscar">Procurar</button>
             <span class="label label-danger" id="label_erro"><br>Você precisa selecionar uma linguagem</span>
             <br>
             <br>
 					</div>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
-					<img class="img-responsive" src="assets/img/octocat.png" alt="">
+					<img class="img-responsive" src="assets/img/octocat.png"  alt="">
 				</div><!-- /col-lg-6 -->
 
 			</div><!-- /row -->
@@ -81,23 +81,23 @@
   <div class="container" id="container">
     <div class="row mt centered">
       <div class="col-lg-4 col-lg-offset-1">
-        <img src="assets/img/octocat.png" width="180" alt="">
-				<h4>Nome do Projeto</h4>
-				<p>Por: Jesus Cristo</p>
+        <img  width="180" id="img_repo" alt="">
+				<h4 id="nome_repo">Nome do Projeto</h4>
+				<p>Por: <a href"" id="dono_repo" target="_blank">Jesus Cristo</a></p>
 
       </div>
       <div class="col-lg-6 col-lg-offset-1">
         <br><br><br>
         <h4>Sobre o repositório</h4>
-  				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+  				<p id="sobre_repo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
           <div class="row">
             <div class="col-lg-3 col-lg-offset-2">
-              <button type="submit" class="btn btn-success btn-lg">Ver repositório</button>
+              <a id="bt_ver_repo" class="btn btn-success btn-lg" target="_blank">Ver repositório</a>
               <br>
               <br>
             </div>
             <div class="col-lg-3 col-lg-offset-2">
-              <button type="submit" class="btn btn-danger btn-lg">Achar outro repositório</button>
+              <button class="btn btn-danger btn-lg bt_buscar">Achar outro repositório</button>
             </div>
           </div>
       </div>
