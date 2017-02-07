@@ -53,22 +53,22 @@
 				<div class="col-lg-6">
 					<h1>Encontre repositórios<br/>
 					aleatórios, em alguns cliques</h1>
-					<form class="form-inline" role="form">
+					<div class="form-inline" role="form">
 					  <div class="form-group">
-              <select class="form-control">
+              <select class="form-control" id="select_linguagem">
                   <option>Selecione uma linguagem</option>
-                  <option>Java</option>
-                  <option>Python</option>
-                  <option>C#</option>
+                  <option value="java">Java</option>
+                  <option value="python">Python</option>
+                  <option value="c#">C#</option>
+                  <option value="php">PHP</option>
               </select>
 
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg">Procurar</button>
+					  <button id="bt_buscar" class="btn btn-warning btn-lg">Procurar</button>
+            <span class="label label-danger" id="label_erro"><br>Você precisa selecionar uma linguagem</span>
             <br>
             <br>
-            <br>
-            <br>
-					</form>
+					</div>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 					<img class="img-responsive" src="assets/img/octocat.png" alt="">
@@ -78,7 +78,7 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 
-  <div class="container">
+  <div class="container" id="container">
     <div class="row mt centered">
       <div class="col-lg-4 col-lg-offset-1">
         <img src="assets/img/octocat.png" width="180" alt="">
@@ -126,5 +126,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
